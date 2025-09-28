@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🥇Brenda es del CdeC🥇</title>
+  <style>
+    .body {
+      background-color: rgba(0, 0, 0, 0.895);
+      text-align: center;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .body__title {
+      color: rgb(238, 255, 0);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .body__img {
+      width: 70%;
+      max-width: 500px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <h1 class="body__title">¿Es IA o soy la nueva socia del CdeC?🤔</h1>
+  <img src="https://northeurope1-mediap.svc.ms/transform/thumbnail?provider=spo&farmid=189025&inputFormat=png&cs=MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDQ4MTcxMGE0fFNQTw&docid=https%3A%2F%2Fmy.microsoftpersonalcontent.com%2F_api%2Fv2.0%2Fdrives%2Fb!jseH7NgXNUO2ce3FVjWXegnPEJTXmeFFgwMeSwBbIZQ4Pdt_4shoToCxdR7UYx5l%2Fitems%2F01OBBDFOYNKITMEUAG6NBJKNF2L5SAX7TL%3Ftempauth%3Dv1e.eyJzaXRlaWQiOiJlYzg3Yzc4ZS0xN2Q4LTQzMzUtYjY3MS1lZGM1NTYzNTk3N2EiLCJhcHBpZCI6IjAwMDAwMDAwLTAwMDAtMDAwMC0wMDAwLTAwMDA0ODE3MTBhNCIsImF1ZCI6IjAwMDAwMDAzLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMC9teS5taWNyb3NvZnRwZXJzb25hbGNvbnRlbnQuY29tQDkxODgwNDBkLTZjNjctNGM1Yi1iMTEyLTM2YTMwNGI2NmRhZCIsImV4cCI6IjE3NTkxMDQwMDAifQ.on79N93sqeA1vDGvYmuwC0SAybl2xbk2cu4Fy4ORwSywFl4IRVl2iskZ4kXzbcm0YDWfbNwnyyQ3DfYSH0R8OHuRQjNgcG0hUTES5tItmS2g9OjvKIL2TaNSBsXQqtTs9ghpYBMHXu5Q8hYNxY1ce2XCD09irQd6x5S3LBjLkhg8xazPtOKrwCEPwgKPFSawMtMh_C44_8D1NiDJfezg9whX01OuuKRrtsYgnlWVwnKRs6XdVc4oDD7fG8KXYeMAKF6ALgs3WB3Hy8M2PamJFzNvR8UdtXvL0xCgrtZjHsjkcJCYkrHxChXXnyTZwRn2Gt30Wf_HGQsd2HPzYxiqNOK7gYkRxTpJx7SUjTI0RZlenKYv93LOq8JClUqcbwx_.o4G0_VGpxI0bxWnogBzosy2cL_cTfSPt82LxeWxYXlU%26version%3DPublished&cb=63894677179&encodeFailures=1&width=1078&height=894" alt="Foto D MI" class="body__img" />
+  <br>
+  <button id="yes">Soy la nueva socia del CdeC 👩‍🎓 </button>
+  <button id="no">Es IA 🖥️</button>
+
+  <script>
+    const vuttonSi = document.getElementById('yes');
+    const vuttonNo = document.getElementById('no');
+
+    const SoyElegida = () => {
+      alert('¡Decisión correcta Javier!💡💯');
+      alert('Sabes que soy una Champion. 🏆😉');
+      location.href = 'https://www.youtube.com/watch?v=04854XqcfCY&list=RD04854XqcfCY&t=38s';
+    };
+
+    const Nosoylegida = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+
+    vuttonSi.addEventListener('click', SoyElegida);
+    vuttonNo.addEventListener('mouseover', Nosoylegida);
+  </script>
+</body>
+
+</html>
